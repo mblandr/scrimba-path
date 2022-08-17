@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cnt {
+	max-width: 570px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+body {
+	font-size: 21px;
+	text-align: center;
+	color: gray;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+}
+
+section {
+	padding: 40px 0;
+}
+
+#intro,
+#article {
+	background-color: #252525;
+	color: white;
+
+}
+
+#job {
+	background-color: white;
+}
+
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+h1 span {
+	display: block;
+	font-size: 80px;
+	font-weight: 900;
+}
+
+.subtitle {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.subtitle span {
+	display: block;
+	color: #000;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.text {
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin: 50px 0 20px;
+	font-size: 42px;
+	font-weight: normal;
+}
+
+h2 span {
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+
+.author {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+a {
+	color: #99d930;
+	font-size: 20px;
+}
+
+a:hover {
+	color: #131313;
+}
+
+article {
+	margin-bottom: 20px;
+}
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	background-color: #99d930;
+	padding: 10px 20px;
+	font-weight: bold;
+	color: #252525;
+	transition: all .5s;
+
+}
+
+.btn:is(:hover, :focus) {
+	color: #fff;
+	background-color: #252525;
+}
+
+h1,
+h2 {
+	padding: 20px 0;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+:is(h1, .subtitle, h2) span,
+article :is(.name, time) {
+	color: #99d930;
+	font-weight: 900;
+}
+
+
+#article .btn:is(:hover, :focus) {
+	background-color: #fff;
+	color: #252525;
+}

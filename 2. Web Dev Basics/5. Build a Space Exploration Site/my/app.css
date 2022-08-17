@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Orbitron, cursive;
+	color: rgb(135, 142, 240);
+
+}
+
+@font-face {
+	font-family: Vroom;
+	src: url(Vroom.ttf);	
+}
+
+.h-main {
+	padding: 20px 0 40px;
+	background: url(https://media3.giphy.com/media/3og0IFrHkIglEOg8Ba/giphy.gif?cid=ecf05e47lzvbq4wxp33rods0wgpmbj972ntd20e3y47ym9ib&rid=giphy.gif&ct=g) center/cover;
+	font-size: 40px;
+	text-shadow: 0 0 5px black;
+	text-align: center;
+	
+}
+.h-main img {
+	padding: 0 0 10px 10px;
+	background-color: rgba(255,255,255,0.3);
+}
+.h-main button {
+	background: none;
+	font: inherit;
+	color: inherit;
+	font-size: 30px;
+	padding: 8px 25px;
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.sel {
+	text-decoration: underline;
+	/* text-decoration-color: white; */
+
+}
+
+p {
+	text-align: center;
+	font-size: 40px;
+	font-family: Vroom, sans-serif;
+}

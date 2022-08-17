@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: teal;
+	text-align: center;
+}
+
+.card {	
+	margin: 100px auto 0;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: stretch;
+	border-bottom: 4px solid lightcoral;
+	padding: 20px;
+	background-color: lightgray;
+}
+
+img {
+	width: 150px;	
+	object-fit: contain;
+}
+
+.card-cnt {	
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 20px;
+}
+
+
+.card-cnt address {
+	font-size: 20px;
+}

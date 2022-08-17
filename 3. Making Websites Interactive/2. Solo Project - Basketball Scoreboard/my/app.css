@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Cursed;
+	src: url(fonts/CursedTimerULiL.ttf) format('truetype');
+
+}
+
+body {
+	font-family: Cursed, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.game {
+	padding: 68px 85px;
+	max-width: 575px;
+	width: 100%;
+	background: #1B244A;
+	color: #EEEEEE;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+h2 {
+	font-family: Verdana, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.item h2 {
+	margin-bottom: 20px;
+}
+
+.score {
+	background: #080001;
+	border-radius: 5px;
+	font-family: Cursed;
+	font-size: 90px;		
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	width: 170px;
+	margin-bottom: 26px;
+	color: #F94F6D;
+}
+
+.score.winner {
+	background-color: lightcyan;
+}
+
+.item .btn {
+	background: none;
+	border: none;
+	font-weight: 600;
+	font-size: 18px;
+	cursor: pointer;
+	color: #9AABD8;
+	padding: 20px;
+	width: 45px;
+	height: 45px;
+	border: 2px solid #9AABD8;
+	border-radius: 5px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item {
+	margin-bottom: 30px;
+}
+
+.row,
+.timer {
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #F94F6D;
+}
+
+.play {
+	padding: 20px 40px;
+	font-size: 40px;
+	border: none;
+	background: white;
+	font-weight: bold;
+	border-radius: 10px;
+	font-family: Verdana, sans-serif;
+	color: #9AABD8;
+	text-transform: uppercase;
+
+}
+
+.play:disabled {
+	background-color: gray;
+	cursor: default;
+	color: white
+}
+
+.item .btn:disabled {
+	background-color: lightgray;
+	cursor: default;
+	color: darkgray;
+}

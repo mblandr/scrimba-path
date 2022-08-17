@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cnt {
+	max-width: 600px;
+	margin: auto;
+	padding: 40px 15px;
+}
+
+body {
+	font-family: sans-serif;
+	color: black;
+}
+
+header {
+	background-color: goldenrod;
+	padding: 10px 20px;
+	font-size: 40px;
+}
+
+.search-box {
+	padding: 10px 20px;
+	margin-left: 30px;
+}
+
+.items {
+	padding: 20px 5px;
+	background-color: royalblue;
+	text-align: center;
+}
+
+.item {
+	padding: 10px 0;
+	background-color: white;
+}
+
+.item+.item {
+	margin-top: 5px;
+}

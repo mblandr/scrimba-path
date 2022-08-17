@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.slider {
+	position: relative;
+	max-width: 600px;
+	overflow: hidden;
+	height: 400px;
+	border: 1px solid #000;
+}
+
+.slider .item {
+	height: 100%;
+	position: absolute;
+}
+
+.slider img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider .item.prev {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.slider .item.next {
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+.slider .item {
+	width: 100%;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.navigation {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+
+.navigation [class|=btn] {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: none;
+	border-radius: 50%;
+	color: black;
+	line-height: 30px;
+	font-size: 30px;
+}
+
+.circles {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 1;
+}
+
+.circles .circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+	transition: all 1s;
+}
+.circles .circle+.circle {
+	margin-left: 5px;
+}
+
+.circles .circle.current {
+	transform: scale(1.2);
+	background-color: red;
+}

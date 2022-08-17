@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cnt {
+	max-width: 80rem;
+	padding: 0 2rem;
+	margin: auto;
+	width: 100%;
+}
+
+.portfolio .cnt {
+	max-width: 120rem;
+}
+
+html {
+	font-size: 0.4em;
+}
+
+body {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #252525;
+	color: #fff;
+}
+
+section {
+	padding: 12rem 0;
+}
+
+.em {
+	color: green;
+	font-weight: 900;
+	font-size: 9rem;
+}
+
+h2 .em {
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 7rem;
+	font-weight: 300;
+	margin-bottom: 0.3em;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 300;
+	padding: 0.3em 0;
+	margin-bottom: 0.3em;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+h3 {
+	padding-top: 0.5em;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 0.25em;
+
+}
+
+button {
+	padding: 0.7em 1.2em;
+	font-weight: bold;
+	background-color: lightgreen;
+	border: none;
+	margin-top: 2em;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: gold;
+}
+
+.promo {
+	min-height: 100vh;
+	display: flex;
+	padding: 0;
+
+
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.promo img {
+	width: 30rem;
+	height: 30rem;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 1em solid;
+}
+
+
+.about {
+	background-color: #fff;
+	color: darkgray;
+}
+
+.meta {
+	margin-bottom: 2em;
+}
+
+.meta time,
+.meta span {
+	color: lightgreen;
+	font-weight: bold;
+}
+
+.more {
+	font-weight: bold;
+	color: lightgreen;
+}
+
+.articles .more:hover {
+	color: gold;
+}
+
+.portfolio {
+	background-color: #fff;
+	color: #000;
+}
+
+.portfolio-item {
+	padding-bottom: 70%;
+	position: relative;
+}
+
+.portfolio-item img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.item-wrap+.item-wrap {
+	margin-top: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+	html {
+		font-size: 0.5em;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	html {
+		font-size: 0.625em;
+	}
+}
+
+@media screen and (min-width: 1130px) {
+	.flex {
+		display: flex;
+	}
+
+	.flex section {
+		width: 50%;
+		display: flex;
+		padding: 4em 2em;
+	}
+
+	.flex section p {
+		margin-bottom: 3rem;
+	}
+
+	.text {
+		text-align: left;
+	}
+
+	.flex .cnt {
+		display: flex;
+		margin-top: 0;
+		margin-bottom: 0;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.flex button {
+		margin-top: auto;
+	}
+
+	.articles {
+		color: #000;
+		background-color: lightgreen;
+	}
+
+	.articles .em {
+		color: #000;
+	}
+
+	.articles .meta :is(span, time),
+	.articles .more {
+		color: inherit;
+	}
+
+	.articles button {
+		background-color: #000;
+		color: lightgreen;
+
+	}
+
+	.articles button:hover {
+		background-color: gold;
+		color: #000;
+	}
+
+	.portfolio {
+		min-height: 100vh;
+		display: flex;
+	}
+
+	.portfolio .work {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		align-content: start;
+	}
+
+	.item-wrap+.item-wrap {
+		margin-top: 0;
+	}
+
+	.portfolio .item-wrap {
+		flex: 30% 0 0;
+
+	}
+
+	.portfolio {
+		color: #fff;
+		background-color: transparent;
+
+
+	}
+}

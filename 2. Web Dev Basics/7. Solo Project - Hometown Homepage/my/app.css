@@ -1,0 +1,139 @@
+/* #region reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+h1,
+h2 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/* #endregion# reset */
+
+/* #region General */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #1d3557;
+	text-align: center;
+
+
+}
+
+.cnt {
+	max-width: 750px;
+	margin: auto;
+	padding: 0 15px;
+
+}
+
+/* #endregion# General */
+
+/* #region Header */
+.h-main {
+	background: url(img/torshov.jpg) center/cover;
+	padding: 116px 0;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.h-main h1 {
+	font-size: 32px;
+	line-height: 37px;
+	background-color: #1D3557;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin-bottom: 14px;
+}
+
+.h-main p {
+	font-size: 19px;
+	line-height: 22px;
+	max-width: 412px;
+	padding: 5px 28px;
+	background-color: #457B9D;
+	border-radius: 10px;
+
+}
+
+/* #endregion# Header */
+
+/* #region Features */
+
+.feats {
+	background-color: #f1faee;
+	padding: 58px 34px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.feat {
+	width: calc(33.33% - 22px);
+}
+
+.feat img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 22px;
+}
+
+.feat h2 {
+	margin-bottom: 17px;
+}
+
+.feat p {
+	font-weight: normal;
+}
+
+/* #endregion# Features */
+
+/* #region Card */
+
+.s-card {
+	padding: 50px 0;
+
+}
+
+.card {
+	display: inline-flex;
+	max-width: 400px;
+	padding: 23px 13px;
+	border-radius: 10px;
+	box-shadow: 0px 6px 0px #1D3557;
+	background-color: #A8DADC;
+}
+
+.card img {
+	width: 180px;
+	margin-right: 5px;
+	border-radius: 10px;
+}
+
+.card h2 {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 26px 0 14px;
+}
+
+.card .cite {
+	margin-bottom: 26px;
+}
+
+.card q {
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* #endregion# Card */

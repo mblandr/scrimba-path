@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	text-align: center;
+	max-width: 400px;
+	width: 100%;
+	padding: 20px;
+	border: 4px solid #000;
+	border-radius: 20px;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/station.jpg) center/cover;
+}
+
+.info h1 {
+	margin-bottom: 20px;
+}
+
+.info .current {
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
+.info button {
+	display: block;
+	width: 200px;
+	margin: 0 auto 10px;
+	padding: 10px 0;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: darkred;
+}
+
+.info button:disabled {
+	background-color: darkgray;
+	cursor: default;
+}
+
+.info .save {
+	background-color: green;
+	margin-bottom: 40px;
+}
+
+.info :is(.previous, .summary) {
+	font-weight: bold;
+	font-size: 30px;
+}

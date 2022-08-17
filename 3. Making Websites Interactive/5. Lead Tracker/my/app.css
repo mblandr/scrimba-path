@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrap {
+	padding: 15px;
+	font-family: Arial, sans-serif;
+	min-width: 640px;
+}
+
+.wrap input {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid green;
+	padding: 10px 20px;
+
+}
+
+.wrap ul {
+	margin-top: 20px;
+}
+
+.wrap li {
+	display: block;
+}
+
+.wrap li.active a {
+	color: red;
+}
+
+.wrap a {
+	color: green;
+}
+
+.wrap li+li {
+	margin-top: 5px;
+}
+
+.wrap button {
+	padding: 10px 20px;
+	border: none;
+	background-color: green;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	font: inherit;
+	font-weight: bold;
+	font-size: 25px;
+	border: 2px solid green;
+}
+
+.wrap button+button {
+	background: none;
+	color: green;
+	margin-left: 10px;
+
+}
+
+.wrap button:disabled {
+	cursor: default;
+	background-color: gray;
+	color: darkgray;
+	border: 2px solid gray;
+}

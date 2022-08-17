@@ -1,0 +1,36 @@
+.main {
+	margin-top: 150px;
+}
+
+.main img {
+	width: 450px;
+	display: block;
+	margin: auto;
+}
+
+input {
+	display: block;
+	width: 600px;
+	margin: 0 auto 50px;
+	padding: 10px 20px;
+	font-size: 24px;
+	border-radius: 50px;
+	border: 1px solid darkgray;	
+}
+
+.btns {
+	display: flex;
+	justify-content: center;
+}
+
+.btns button {
+	padding: 10px 20px;
+	background: #dedddd;
+	border: none;
+	font-size: 14px;
+	border-radius: 10px;
+
+}
+.btns button+button {
+	margin-left: 20px;
+}
