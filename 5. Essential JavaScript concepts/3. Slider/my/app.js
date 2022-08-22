@@ -29,19 +29,19 @@ const numSlide = 6,
 			else
 				circle.classList.remove('current')
 		})
-	},
-	doSlider = () => {
-		timer = setTimeout(() => {
-			current += direction
-			direction = 1
-			setCurrent(current)
-
-			doSlider()
-		}, 2000)
-
 	}
+	//doSlider = () => {
+	//	timer = setTimeout(() => {
+	//		current += direction
+	//		direction = 1
+	//		setCurrent(current)
 
-let current = 0, timer, direction=1
+	//		doSlider()
+	//	}, 2000)
+
+	//}
+
+let current = 0, timer, direction = 1
 
 for (let i = 1; i <= numSlide; i++) {
 	const item = document.createElement('div')
@@ -66,4 +66,9 @@ slider.append(...items)
 circlesEl.append(...circles)
 
 setCurrent(0)
-doSlider()
+setInterval(() => {
+	current += direction
+	direction = 1
+	setCurrent(current)
+}, 2000)
+
