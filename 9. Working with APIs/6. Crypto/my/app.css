@@ -9,8 +9,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1605708896118-957f660c1555?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjExNjg3MjM&ixlib=rb-1.2.1&q=80&w=1080) center/cover fixed;
+	justify-content: space-between;	
 	padding: 1rem;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 1);

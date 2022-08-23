@@ -6,6 +6,43 @@ const
 
 	cityEl = document.querySelector('.city'),
 	timeEl = document.querySelector('h1'),
+	updateBg = () => {
+		fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature`)
+			.then(
+				res => {
+					if (!res.ok)
+						throw new Error(res.statusText)
+					return res.json()
+				}
+			)
+			.then(data => {
+				const imgEl = document.createElement('img')
+				const w = data.width
+				let imgUrl
+				const urls = data.urls
+				const screenW = document.body.scrollWidth
+				if (screenW >= data.width)
+					imgUrl = urls.raw
+				else if (screenW >= 400)
+					imgUrl = urls.regular
+				else
+					imgUrl = urls.small
+				imgEl.src = imgUrl
+				imgEl.addEventListener('load', () => {
+					console.log('img loaded')
+					document.body.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imgUrl}) center/cover fixed`
+
+				})
+			})
+			.catch(e => {
+				if (!errorBG) {
+					alert('fetching background: ' + e.message)
+					errorBG = true
+				}
+			}
+			)
+
+	},
 	updateCrypto = () => {
 		cryptoCoursesEls[0].textContent =
 			cryptoCoursesEls[1].textContent =
@@ -89,11 +126,14 @@ const
 		setInterval(updateWeather, 3600)
 		updateCrypto()
 		setInterval(updateWeather, 1000)
+		updateBg()
+		setInterval(updateBg, 3600000)
 	}
 
 let errorPermissionDeniedShown = false,
 	errorWeatherShown = false,
 	errorCryptoShown = false,
+	errorBG = false,
 	imgEl = document.querySelector('.temp img'),
 	cryptoImgEl = document.querySelector('.crypto h2 img')
 
