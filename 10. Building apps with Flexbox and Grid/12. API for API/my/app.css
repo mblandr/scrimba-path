@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: darkgreen;
+}
+
+main {
+	max-width: 830px;
+	margin: auto;
+	padding: 15px;
+	display: grid;
+	grid-row-gap: 20px;
+}
+article {	
+	font-size: 25px;
+	background-color: lightskyblue;
+	padding: 10px;
+	display: grid;
+	grid-row-gap: 10px;
+	grid-template: 4rem minmax(100px, auto) 2rem / repeat(3, 1fr);
+	grid-template-areas: 'header header header' 'descr descr descr' 'auth . https';
+	border-radius: 10px;
+}
+
+article {
+	text-align: center;
+}
+article h2 {
+	grid-area: header;
+}
+article .descr {
+	grid-area: descr;
+	overflow-y: auto;
+}
+article .auth {
+	grid-area: auth;
+}
+article .https {
+	grid-area: https;
+}
