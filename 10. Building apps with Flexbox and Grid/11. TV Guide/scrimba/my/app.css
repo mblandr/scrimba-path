@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: darkgray;
+}
+
+
+.modal {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: white;
+}
+
+.inner {
+	margin: auto;
+	border: 4px solid #000;
+	
+	max-width: 830px;
+	width: 100%;
+	background-color: darkgray;
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;	
+}
+
+.inner button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 30px;
+	border: none;
+	cursor: pointer;
+	color: red;
+	font-weight: bold;
+	transform: translate(50%, -50%);
+}
+
+.inner h2,
+.inner .content {
+	grid-column: 1/-1;
+}
+
+
+.episodes {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+
+.episode {
+	display: flex;
+	font-size: 0.8rem;
+	align-items: center;
+	padding: 5px;	
+	background-color: yellow;
+}
+
+
+.episode img {
+	width: 50px;
+	margin-right: 5px;
+	border-radius: 10px;
+}
+
+
+
+.cnt {
+	margin: auto;
+	max-width: 1230px;
+	width: 100%;
+	padding: 0 15px;
+}
+
+form {
+	text-align: center;
+	padding: 20px 0;
+}
+
+input {
+	padding: 10px 30px 10px 50px;
+	width: 100%;
+	border: none;
+	font: inherit;
+	border-radius: 5px;
+	border: none;
+	background-color: lightgray;
+}
+
+input:focus-visible {
+	outline: 2px solid black;
+}
+
+
+label {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+}
+
+label::before {
+	content: '';
+	background: url(img/search.svg) center/contain no-repeat;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	height: 30px;
+	width: 30px;
+}
+
+main {
+	display: grid;
+	grid-gap: 40px;
+}
+
+article {
+	display: grid;
+	grid-gap: 2rem;
+	border: 1px solid #000;
+	padding-right: 20px;
+	overflow: hidden;
+	border-radius: 20px;
+	grid-template: 2rem auto 10rem/ 1fr 3fr;
+	grid-template-areas: 'img title''img content''img button';
+}
+
+article h2 {
+	grid-area: title;
+}
+
+article img {
+	grid-area: img;
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+
+article .content {
+	grid-area: content;
+}
+
+article p {
+	text-indent: 2rem;
+}
+
+article p+p {
+	margin-top: 5px;
+}
+
+article button {
+	grid-area: button;
+	justify-self: center;
+	align-self: center;
+	padding: 20px 40px;
+	cursor: pointer;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	background-color: lightgray;
+	text-transform: uppercase;
+	font-weight: bold;
+}

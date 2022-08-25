@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: grid;
+	height: 100vh;
+}
+
+main>div {
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+
+}
+
+.item {
+	background-color: lightgreen;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.head {
+	background-color: lightgray;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	grid-row: 1;
+}
