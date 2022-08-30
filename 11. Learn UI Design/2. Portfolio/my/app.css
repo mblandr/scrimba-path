@@ -180,12 +180,15 @@ nav.opened ul {
 	transform: translateX(0);
 	opacity: 1;
 }
+
 nav.opened .burger::after {
 	display: none;
 }
+
 nav.opened .burger {
 	transform: rotate(45deg);
 }
+
 nav.opened .btn-nav {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -335,9 +338,40 @@ nav.opened .burger:before {
 	color: var(--c-accent);
 }
 
-#works img {
-	max-width: calc(100% - 6em);
+
+
+#works .img {
+	overflow: hidden;
+	width: 85%;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	padding-bottom: 100%;
+	background-color: var(--c-accent);
+	display: block;
 	margin: auto;
+}
+
+#works img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.5s ease-in-out;
+
+}
+
+
+#works .img:focus {
+	outline: 4px solid var(--c-accent);
+	outline-offset: 3px;
+
+}
+
+#works .img:hover img {
+	transform: scale(1.2);
+	opacity: 0.7;
 }
 
 /* #endregion# works */
@@ -480,27 +514,16 @@ nav.opened .burger:before {
 	#works p {
 		max-width: unset;
 	}
-
+	#works .img {
+		width: 100%;
+	}
 	#works .items {
 		display: grid;
 		grid-gap: 0.5em;
 		grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
 	}
 
-	#works .img {
-		position: relative;
-		padding-bottom: 100%;
-	}
 
-	#works img {
-		max-width: unset;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
 
 	/* #endregion# works */
 
