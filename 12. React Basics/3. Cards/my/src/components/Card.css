@@ -1,0 +1,59 @@
+.card {
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);	
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	flex-grow: 1;
+}
+
+.image {
+	align-self: stretch;
+	margin-bottom: 20px;
+}
+
+.content h2 {
+	flex-grow: 1;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.content a {
+	display: block;
+	font-size: 16px;
+	text-decoration: none;
+	color: inherit;
+	margin-bottom: 5px;	
+	color: gray;
+	display: flex;
+	align-items: center;
+}
+
+.content a:hover {
+	text-decoration: underline;
+}
+
+.content a::before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-position: center;
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.content .phone::before {
+	background-image: url(/img/ico/phone-icon.png);
+}
+
+.content .email::before {
+	background-image: url(/img/ico/mail-icon.png);
+}

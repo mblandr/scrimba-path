@@ -1,0 +1,94 @@
+header {
+	background: #21222A;
+	padding: 31px 26px;
+	display: flex;
+	align-items: center;
+	color: #DEEBF8;
+	border-bottom: 2px solid black;
+}
+
+.light-theme header {
+	background: #fff;
+	border-bottom: 2px solid lightgray;
+
+}
+
+
+.logo {
+	margin-right: 10px;
+	width: 29px;
+	height: 29px;
+}
+
+h1 {
+	color: #61DAFB;
+	font-weight: 700;
+	font-size: 22.2535px;
+	line-height: 27px;
+	letter-spacing: -0.05em;
+}
+
+.toggler {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	cursor: pointer;
+	color: #DEEBF8;
+	font-weight: bold;
+}
+
+.light-theme .toggler {
+	color: #21222A;
+}
+
+.toggler input {
+	display: none;
+}
+
+.indicator {
+	margin: 0 7px;
+	width: 30px;
+	height: 15px;
+	background-color: #DEEBF8;
+	border: 1px solid #DEEBF8;
+	border-radius: 10px;
+	position: relative;
+}
+
+.light-theme .indicator {
+	background-color: #21222A;
+	border: 1px solid #21222A;
+}
+
+.indicator::after {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background-color: #21222A;
+	border-radius: 50%;
+	right: 0;
+	transition: right 0.3s;
+}
+
+.light-theme .indicator::after {
+	background-color: #DEEBF8;
+}
+
+.light {
+	opacity: 0.5;
+}
+
+.light-theme .light {
+	opacity: 1;
+}
+
+.light-theme .dark {
+	opacity: 0.5;
+}
+
+.toggled .indicator::after {
+	right: 15px;
+}

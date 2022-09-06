@@ -1,0 +1,60 @@
+#root {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 36px;
+	margin-bottom: 14px;
+}
+
+.content {
+	margin-left: 26px;
+	margin-bottom: 50px;
+}
+
+
+.content p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 110%;
+	color: #222222;
+	max-width: 300px;
+}
+
+.cnt {
+	max-width: 580px;
+	padding: 0 15px;
+	margin: auto;
+	width: 100%;
+}
+
+.h-main {
+	margin-bottom: 30px;
+
+}
+
+.promo {
+	max-width: 400px;
+	margin: 0 auto 33px;
+	height: 230px;
+	width: 100%;
+}
+
+.items {
+	display: flex;
+	overflow-x: auto;
+}
+
+.items .card-item {
+	flex: 176px 0 0;
+
+}
+
+.items .card-item+.card-item {
+	margin-left: 16px;
+}

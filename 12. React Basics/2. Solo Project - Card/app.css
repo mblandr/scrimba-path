@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 10.24px;
+	font-family: Inter, sans-serif;
+	color: #DCDCDC;
+	background: #23252C;	
+}
+
+#root {
+	min-height: 100vh;
+	display: flex;
+}

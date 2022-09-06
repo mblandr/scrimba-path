@@ -1,0 +1,74 @@
+.card :is(.body, header) {
+	background: #1A1B21;
+}
+
+.card .body {
+	padding: 35px 21px 50px;
+
+}
+
+.card .img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.card header {
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+.card h1 {
+
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: #FFFFFF;
+	margin-bottom: 10px;
+
+}
+
+.card .prof {
+	text-transform: capitalize;
+	font-size: 12.8px;
+	line-height: 15px;
+	text-align: center;
+	color: #F3BF99;
+	margin-bottom: 15px;
+}
+
+.card .web {
+	color: inherit;
+	text-decoration: none;
+	font-size: 10.24px;
+	line-height: 150%;
+	display: block;
+	color: #F5F5F5;
+}
+
+.btns {
+	width: min-content;
+	max-width: 100%;
+	display: flex;
+	margin: 0 auto 30px;
+
+}
+
+.btns .button+.button {
+	margin-left: 17px;
+}
+
+.card .paragraph+.paragraph {
+	margin-top: 20px;
+}
+
+.card footer {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	background: #161619;
+	border-radius: 0px 0px 10px 10px;
+}

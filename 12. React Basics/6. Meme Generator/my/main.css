@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Karla, sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+
+.cnt {
+	max-width: 507px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+.header-main,
+form {
+	margin-bottom: 36px;
+}

@@ -1,0 +1,28 @@
+header {
+	background: #21222A;
+	padding: 31px 26px;
+	display: flex;
+	align-items: center;
+	color: #DEEBF8;
+}
+
+header p {
+	font-weight: 600;
+	margin-left: auto;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.logo {
+	margin-right: 10px;
+	width: 29px;
+	height: 29px;
+}
+
+h1 {
+	color: #61DAFB;
+	font-weight: 700;
+	font-size: 22.2535px;
+	line-height: 27px;
+	letter-spacing: -0.05em;
+}

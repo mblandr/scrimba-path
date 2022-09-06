@@ -1,0 +1,29 @@
+.btn {
+	padding: 10px 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font: inherit;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.btn {
+	text-decoration: none;
+}
+
+.btn span {
+
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.btn img {
+	width: 16px;
+	height: 16px;
+	object-fit: cover;
+	margin-right: 10px;
+}

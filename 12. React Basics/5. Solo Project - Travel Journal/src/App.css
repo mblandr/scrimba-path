@@ -1,0 +1,23 @@
+.cnt {
+	max-width: 500px;
+	padding: 0 15px;
+	width: 100%;
+	margin: auto;
+}
+
+.h-main {
+	margin-bottom: 45px;
+}
+
+.article {
+	margin-top: 18px;
+}
+
+.article::after {
+	content: '';
+	display: block;
+	margin-top: 18px;
+	height: 1px;
+	background-color: #F5F5F5;
+
+}
